@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Problem solving: generic strategies</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -25,8 +25,396 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Problem solving</h1>
+					<h3>Generic strategies</h3>
+					<p>
+						<small>Brooma, October 2019</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Definition</h2>
+					<blockquote>
+						Problem solving is the act of <span class="fragment highlight-red">defining</span> a problem; <span class="fragment highlight-blue">determining the cause</span> of the problem; <span class="fragment highlight-green">identifying, prioritizing, and selecting alternatives for a solution</span>; and <span class="fragment highlight-red">implementing a solution</span>.
+					</blockquote>
+					<p>
+						<small><a href="https://asq.org/quality-resources/problem-solving">American Society of Quality</a></small>
+					</p>
+
+					<aside class="notes">
+						<p>What is problem solving?</p>
+						
+						<p>Problem solving is the act of defining a problem; determining the cause of the problem; identifying, prioritizing, and selecting alternatives for a solution; and implementing a solution.</p>
+						
+						<p>If an act doesn't have all these stages, then this act is not a an act of problem solving. Let's go though all parts of this definition.</p>
+						<ul>
+							<li>You simply cannot solve a problem if you didn't define a problem, so you just don't have it.</li>
+							<li>If you don't determine the cause of the problem, then you just don't solve the problem. You do something else.</li>
+							<li>If don't identify possible solutions, then you just can't go through the solution of the problem. If you don't prioritize a solution, you can't select a solution, and if you don't select a solution, then you just can't start resolving the problem. But sometimes you can do even all these steps by saying: "Let's just use this solution". It this case this possible solution can be the solution and may be not a solution at all.</li>
+							<li>If you don't implement a solution, the you will not solve the problem. Probably you just research the problem and approaches.</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Bites of knowledge</h2>
+					<ul>
+						<li>problem-solving strategies</li>
+						<li>problem-solving methods</li>
+						<li>metacognitive knowledge</li>
+					</ul>
+					
+					<aside class="notes">
+						<p>For the purpose of simplicity of understanding this report is presented as a list of bits of knowledge.</p>
+
+						<p>Problem-solving strategies are the steps one can use to solve the problem. E.g. proof by contradiction. Strategies can be generic is such a way that it can be relevant for most problemns, and can be specific, e.g. can describe only approach to solve programming problems on arrays.</p>
+
+						<p>Problem-solving methods are systematic approaches to solve problems. E.g. protocol of urgent bug resolution.</p>
+
+						<p>Metacognitive knowledge is what individuals know about themselves as cognitive processors.</p>
+
+						<p>This report is mostly about strategies. Also it contains some approaches to improve problem solving in the long run. These approaches are based on highly trivial metacognitive knowledge.</p>
+
+						<p>Let's suppose that there are two most fundamental questions that you can ask yourself about the problem immediately:
+								<ul>
+									<li>Should I solve the problem at all?</li>
+									<li>Is it solvable?</li>
+								</ul>
+						</p>
+
+						<p>The first one is usually quite simple, but the second one deserves a separate report. But because usually we solve solvable problems, let's start talking about strategies of problem solving.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Strategy 1</h2>
+					<h3>Find a ready strategy</h3>
+					<p>Yes, just find a ready strategy!</p>
+
+					<aside class="notes">
+						<p>Sometimes you don't need to think to solve a problem.</p>
+
+						<p>Using of this strategy frequently can be very risky, as we can mistakenly assume that we solve the same problem. But proving the identity of problems is a problem, and I think that it's a big topic for any other report. But I think that it is useful anyway to ask youself if you really solved that problem, and what if these problems have small differences that are significant?</p>
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Strategy 2</h2>
+						<h3>Division</h3>
+	
+						<p>Just divide the problem to subproblems</p>
+					</section>
+					<section>
+						It makes sense no matter if your problem is to understand a problem, or to find a solution.
+
+						<aside class="notes">
+							<p>Did you notice that I've just called subproblems of a problem solving?</p>
+							
+							<p>You can even consider the definition of problem solving as a stuctured act.</p>
+
+							<p>By the way the article with definition from the site of the association describles steps. So it kinda describes the algorithm of problem solving.</p>
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>Strategy 3</h2>
+					<h3>The most general algorithm</h3>
+
+					<ul>
+						<li>Understand the problem
+							<ul>
+								<li>Understand what we have</li>
+								<li>Understand what we want to achieve</li>
+							</ul>
+						</li>
+						<li>Find the path from the given state to the desired state
+							<ul>
+								<li>Find a division to understandable and solvable subproblems.
+									<ul>
+										<li>Apply this algorithm to subproblems.</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>Follow the path</li>
+					</ul>
+
+					<aside class="notes">
+						<p>You can improve this algorithm by introducing the following strategies.</p>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Strategy 4</h2>
+					<h3>Enumeration</h3>
+
+					<p>Enumerate all the possible variations of solutions or proofs (<a href="https://en.wikipedia.org/wiki/Brute-force_search">brute-force search</a>).</p>
+
+					<aside class="notes">
+						<p>E.g. you can proof that only one of the options is the desired or that every subproblem is solvable. You can even sort out algorithms and data types.</p>
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Strategy 5</h2>
+						<h3>Patterns</h3>
+
+						<p>Look for patterns</p>
+
+						<aside class="notes">
+							<p>Patterns are great for simplification and generalization. Mathematical induction is an example of such generalization tool.</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Flavor 1</h2>
+						<h3>First principles</h3>
+
+						<aside class="notes">
+							<p>By searching for patterns you can define something similar to axioms and postulates (first principles). E.g. laws of physics.</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Flavor 2</h2>
+						<h3>Abstraction</h3>
+						<p>Abstraction makes the concept more vague.</p>
+
+						<aside class="notes">
+							<p>Abstraction (general rules and concepts).</p>
+
+							<p>But you cannot generalize using lie or wrong unity. Abstraction can be definition using the "be" verb, not "has", "is in" or any other, because in linguistic only "be" used a as a definition that defines an inherent property, other verbs doesn't do it. Abstraction makes the concept more vague.</p>
+						</aside>
+					</section>
+					<section>
+						<p>The class concept is vague:</p>
+
+						<ul>
+							<li>a publication
+								<ul>
+									<li>a newspaper</li>
+									<ul>
+										<li>The San Francisco Chronicle</li>
+										<ul>
+											<li>the May 18 edition of The San Francisco Chronicle</li>
+											<ul>
+												<li>❓ my copy of the May 18 edition of The San Francisco Chronicle</li>
+												<ul>
+													<li>❔ my copy of the May 18 edition of The San Francisco Chronicle as it was when I first picked it up.</li>
+												</ul>
+											</ul>
+										</ul>
+									</ul>
+								</ul>
+							</li>
+						</ul>
+
+						<aside class="notes">
+							<p>As contrasted with my copy as it was a few days later: in my fireplace, burning.</p>
+
+							<p>The class concept is highly usable, because we know which differences of our entities are static and which are runtime.</p>
+
+							<p>Someone could say that classes and instances are really exist, but it is not the case. It's just a simplicition that sometime can be useful in programming. There are programming languages can allow as to define formally exactly what we want without being limited to a dichotomy of classes and objects. These languages are used by engineers who want to define their programs very exact and formally, because as I said the class-object dichotomy as abstraction introduces nebulosity.</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Flavor 3</h2>
+						<h3>Algorithmic paradigm</h3>
+
+						<p>
+							<small><a href="https://en.wikipedia.org/wiki/Algorithm#By_design_paradigm">Classification of algorithms by design paradigm</a></small>
+						</p>
+						
+						<aside class="notes">
+							<p>Algorithmic paradigm is an abstraction higher than the notion of an algorithm.</p>
+
+							<p>Examples: greedy algorithm, dynamic programming, divide and conquer.</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Flavor 4</h2>
+						<h3>Design patterns</h3>
+
+						<aside class="notes">
+							<p>Some design patterns can be used to simplify (not complicate, but solve an additional problem) structure of your code (e.g. all structural patterns from Design Patterns).</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Inventor's paradox</h2>
+
+						<p>"Instead of solving a specific type of problem, which would seem intuitively easier, it can be easier to solve a more general problem, which covers the specifics of the sought-after solution."</p>
+
+						<p><a href="www.aosabook.org/en/index.html">AOSA</a></p>
+
+						<aside class="notes">
+							"According to Bruce Tate, some of the most successful frameworks are simple generalizations of complex problems, and he says that Visual Basic, the Internet, and Apache web servers plug-ins are primary examples of such practice." AOSA (The Architecture of Open Source Applications) explains about such projects.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h2>Strategy 6</h2>
+					<h3>Constraints</h3>
+
+					<p>Not all solutions are equally useful.</p>
+
+					<aside class="notes">
+						<p>Usually it is helpful to impose restrictions on a solution before you start to solve the problem. And after the solution was found we still can ask ourself what are the positive and negative properties of the solution and how to fix it.</p>
+
+						<p>Even if we already accounted all the constraints in the objective we still can apply the most useful constraint ever. As simple the solution the more probability that it solves the problem and the problem only, i.e. the minimal solution is the best solution. We can bootstrap the simples solution incrementally...</p>
+					</aside>
+				</section>
+				<section>
+					<section>
+						<h2>Strategy 7</h2>
+						<h3>Incremental solving</h3>
+					</section>
+					<section>
+						<h2>Flavor 1</h2>
+						<h3>Offer and refute</h3>
+
+						<ul>
+							<li>Repeat:</li>
+							<ul>
+								<li>Offer a theory</li>
+								<li>Try to refute it</li>
+								<li>After each satisfaction of a previous condition, you can try to find a simpler theory.</li>
+							</ul>
+						</ul>
+
+						<aside class="notes">
+							<p>Offer a theory: Usually you initially come up with a pair of simple examples and form a simple solution</p>
+
+							<p>Try to refute it: When we found a solution, the last try to refute becomes a proof of the correctness of the solution.</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Flavor 2</h2>
+						<h3>Declare and define</h3>
+
+						<ul>
+							<li>Declare your function</li>
+							<li><span class="fragment highlight-red">Define</span> it
+								<ul>
+									<li>Write the definition using pseudocode</li>
+									<li>Replace each term to a variable use or a function call</li>
+									<li>Declare each variable and function</li>
+									<li><span class="fragment highlight-red">Define</span> each variable and function</li>
+								</ul>
+							</li>
+						</ul>
+
+						<aside class="notes">
+							<p>Another formulation: incrementally build an algorithm top-down using the given problem as a starting point.</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Flavor 3</h2>
+						<h3>Test-driven development</h3>
+
+						<aside class="notes">
+							<p>For example if you want to write a sorting algorithm, you can start with writing tests for empty and one-item lists. Then you write tests for both orders of two-item lists. And then for three-item lists and think about how would you use the function 'check and swap'. And then enlightenment comes to you and you write the bubble sort.</p>
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h2>The dangerous one</h2>
+					<h3>Trial and error</h3>
+
+					<p>Testing possible solutions until the right one is found. It's an inherent empiric method of human thinking.</p>
+
+					<aside class="notes">
+						<p>Not the same as enumeration, as there's no enumeration rule.</p>
+
+						<p>Not the same as offer and refute, as that guarantees incremental improvement of solution.</p>
+
+						<p>In elementary algebra, when solving equations, it is "guess and check". Useful only to satisfy the requirement once. Otherwise one should think about a real strategy. But because we solve programming problems every day, it's not that useful to hack every day.</p>
+
+						<p>Just think about self-learning. What is the least effective method to learn? Learning from your mistakes.</p>
+					</aside>
+				</section>
+				<section>
+					<h2>Strategy 8</h2>
+					<h3>Take into account the reality</h3>
+
+					<aside class="notes">
+						<p>Some problems in their simple formulation are too hard, and solving the whole problem could be useless. So you can simplify a solution in a significant way by proofing a formal property of a solution.</p>
+					</aside>
+				</section>
+				<section>
+					<h2>Strategy 9</h2>
+					<h3>Reduction</h3>
+					
+					<p>Transform the problem to a solved one.</p>
+				</section>
+				<section>
+					<h2>Approach 1</h2>
+					<h3>Reseach</h3>
+
+					<p>You can never know enough mathematics.</p>
+
+					<p><small><a href="https://meaningness.com/metablog/how-to-think">How To Think Real Good</a></small></p>
+
+					<aside class="notes">
+						<p>It's quite understandable and widespread that those who know more solve problems better.</p>
+
+						<p>In order to solve specific problems you could think like someone who already solved that kind of problems in their scientific work. Can you guess that you could think like they when you don't know their problems and solution? No, you can't. Problems and solutions can be very very unexpected. The best thing you can do is to find areas of knowledge and problems and understand how that problems are solved by professionals, i.e. learn mindsets of that professionals. I mean yes, it doesn't mean exactly that you have to know the math.</p>
+
+						<p>For example my friend (how is very productive scientist) say that he solve problems for one hour per day. All the other time he learn new things. And quite frequently when he need to make new research he just say: "Wait a second, I've just read something similar. Let's try this." And it helps.</p>
+
+						<p>Actually, even all this report in some way is about the rule above.</p>
+					</aside>
+				</section>
+				<section>
+					<h2>Strategy 10</h2>
+					<h3>Creative approaches</h3>
+
+					<ul>
+						<li>Divergent thinking</li>
+						<li>Shoshin (初心) - beginner's mind</li>
+					</ul>
+
+					<aside class="notes">
+						<p>Divergent thinking is a thought process or method used to generate creative ideas by exploring many possible solutions. So it can be similar to trial and error that can be harmful as we cannot predict solution qualities.</p>
+
+						<p>Shoshin is attitude of openness, eagerness, and lack of preconceptions when studying a subject, even when studying at an advanced level, just as a beginner would. I will not say how to be in this state.</p>
+
+						<p>As you can see we can manage our approach to change properties of solution generation. You can easily see that some approaches can be useless or even harmful for problem solving.</p>
+					</aside>
+				</section>
+				<section>
+					<section>
+						<h2>Approach 2</h2>
+						<h3>Build your problem-solving arsenal</h3>
+					</section>
+					<section>
+						<h2>Flavor 1</h2>
+						<h3>Self-reflection, yaaay!</h3>
+
+						<ul>
+							<li>Solve a problem</li>
+							<li>Self-reflect on your progress</li>
+						</ul>
+
+						<aside class="notes">
+							<p>Why I solved it for so long? How could I solve faster? What mistaked did I make? How to avoid that mistakes?</p>
+						</aside>
+					</section>
+					<section>
+						<h2>Flavor 2</h2>
+						<h3>Write your own problem-solving algorithm</h3>
+
+						<aside class="notes">
+							<p>Write your own problem-solving algorithm using the base algorithm that I showed earlier, using the following strategies, you experience. And then you can improve your algorithm of problem-solving with self-reflection on your solved problems.</p>
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h2>Thanks 👏🏼</h2>
+
+					<p>Could you add something?</p>
+				</section>
 			</div>
 		</div>
 
