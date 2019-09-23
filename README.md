@@ -1,3 +1,3 @@
-# Problem solving I: generic strategies
+# Problem solving: generic strategies
 
 Nsk, October 2019
